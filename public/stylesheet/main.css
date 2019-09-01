@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin:0
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image:url('https://cdn-images-1.medium.com/max/1600/1*TDolIW_SESDjOrOd5N2KIA.jpeg');
+    background-size: cover;
+    
+}
+.header_menu{
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    border:1px solid red;
+
+}
+.logo{
+    width:20%;
+    text-align:center;
+}
