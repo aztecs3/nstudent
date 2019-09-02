@@ -5,7 +5,7 @@ var express=require("express"),
 
 var indexroutes=require("./routes/index");
 
-mongoose.connect("mongodb://localhost/lib_rp");
+mongoose.connect("mongodb://localhost/students");
 app.set("view engine","ejs");
 app.use(bodyparser.urlencoded({ectended:true}));
 app.use(express.static(__dirname+"/public"));

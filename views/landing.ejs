@@ -1,17 +1,68 @@
-<% include partial/header %>
-    <header>
-        <div class="header_menu">
-            <div class="logo">
-                RP_Library
-            </div>
-            <div class="menu_list">
-                 <ul>
-                     <li><a href="/">Home</a></li>
-                     <li><a href="/">Home</a></li>
-                 </ul>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.8">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>S_Info</title>
+        <link rel="stylesheet" href="stylesheet/main.css" type="text/css">
+    </head>
+    <body>
+        <div id="container">
+            <main id="main">
+               <div id="loginuicontainer">
+                    <div id="login-tab" class="active">Login</div><div id="register-tab">Register</div>
+                    <form action="" method=POST>
+                   <div id="logincontainer" > 
+                        <div class="form-group">
+                            <input type="text" class="form-control inputbox" id="login-username" name="lusername" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control inputbox" id="login-password"name="lpassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="Submit" class="btn btn-primary" value="login">
+                        </div>
+                    </form>
+                    <p class="textcenter  signuptxt">Dont have an account ? <a class="link registerlink" href="#">Sign Up</a></p>
+                    <p class="textcenter">
+                        <a href="#" class="link forgetlink ">Forgot Password ?</a>
+                    </p>
+                    </div>
+                   <div id="registercontainer" hidden>
+                       <form action="" method=post>
+                        <div class="form-group">
+                            <input type="text" class="form-control inputbox" name="fname" id="register-fname" placeholder="First-name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control inputbox" name="lname" id="register-lname" placeholder="Last-name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control inputbox" name="email" id="register-email" placeholder="Email ID/Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control inputbox" name="psword" id="register-psword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control inputbox" name="cpasword" id="register-cpsword" placeholder="Confirm-Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control inputbox" name="pno" id="register-pno" placeholder="Phone No.">
+                        </div>
+                        <div class="form-group">
+                            <input type="Submit" class="btn btn-primary" value="register" >
+                        </div>
+                    </form>   
+                    <div class="textcenter signuptxt">
+                        Already have an account?
+                        <a href="" class="link loginlink">Login</a>
+                    </div>
+                   </div>
+               </div>
+            </main>
         </div>
-    </header>
-<% include partial/footer %>
+        <script type="text/javascript"  src="js/main.js"></script>
+    </body>
+</html>
 
 
